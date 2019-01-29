@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <title>Image Gallery</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/ideal-image-slider.css">
+ <link rel="stylesheet" href="css/default.css">
+ <link rel="stylesheet" href="css/lightbox.min.css">
+     
+     <style media="screen">
+	#slider {
+		max-width: 900px;
+		margin: 50px auto;
+	}
+	</style>
+        
+     <style>
+         h2{
+             text-align: center;
+         }     
+     </style>
+ </head>
+
+ <body>
+   
+     <h2>Welcome to Image Gallery</h2>
+     <div id="slider">
+		<img src="images/Skeletone%20chair%20slider.jpg" data-src-2x="images/Skeletone%20chair%20slider.jpg" alt="Slide 1" />
+		<img data-src="images/hair%20cut%20slider.jpg" data-src-2x="images/hair%20cut%20slider.jpg" src="" alt="Slide 2" />
+		<a href="http://example.com"><img data-src="images/Hairshop%20slider.jpg" data-src-2x="images/Hairshop%20slider.jpg" src="" alt="Slide 3" /></a>
+		<img data-src="images/man2%20slider.jpg" data-src-2x="images/man2%20slider.jpg" src="" alt="Slide 4" />
+     </div>
+   
+    <section>
+    <p>
+      For more information, visit <a href="http://lokeshdhakar.com/projects/lightbox2/">http://lokeshdhakar.com/projects/lightbox2/</a>
+    </p>
+     </section>
+     
+     <script src="js/ideal-image-slider.js"></script>
+     <script>
+	 var slider = new IdealImageSlider.Slider('#slider');
+	 slider.start();
+	 </script>
+     
+     <script src="js/lightbox-plus-jquery.min.js"></script>
+
+  </body>
+</html>
